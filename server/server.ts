@@ -131,7 +131,7 @@ returning *;
       throw new ClientError(404, `${entryId} not found.`);
     }
 
-    res.status(204);
+    res.sendStatus(204);
   } catch (err) {
     next(err);
   }
